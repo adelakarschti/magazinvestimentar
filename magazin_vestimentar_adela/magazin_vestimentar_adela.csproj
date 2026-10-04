@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>magazin_vestimentar_adela</RootNamespace>
+    <AssemblyName>magazin_vestimentar_adela</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bazadedate_magazinDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bazadedate_magazinDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmareComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmareComanda.Designer.cs">
+      <DependentUpon>ConfirmareComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creareCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creareCont.Designer.cs">
+      <DependentUpon>creareCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bazadedate_magazinDataSet.cs">
+      <DependentUpon>bazadedate_magazinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bazadedate_magazinDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bazadedate_magazinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cart.Designer.cs">
+      <DependentUpon>cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazin.Designer.cs">
+      <DependentUpon>Magazin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HiddenTabs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfirmareComanda.resx">
+      <DependentUpon>ConfirmareComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creareCont.resx">
+      <DependentUpon>creareCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cart.resx">
+      <DependentUpon>cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazin.resx">
+      <DependentUpon>Magazin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bazadedate_magazinDataSet.xsc">
+      <DependentUpon>bazadedate_magazinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bazadedate_magazinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bazadedate_magazinDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bazadedate_magazinDataSet.xss">
+      <DependentUpon>bazadedate_magazinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bazadedate_magazinDataSet1.xsc">
+      <DependentUpon>bazadedate_magazinDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bazadedate_magazinDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bazadedate_magazinDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bazadedate_magazinDataSet1.xss">
+      <DependentUpon>bazadedate_magazinDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bazadedate_magazin.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bazadedate_magazin_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>bazadedate_magazin.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\toateprod.jpeg" />
+    <None Include="Resources\business.jpg" />
+    <None Include="Resources\casual.jpg" />
+    <None Include="Resources\y2k.jpg" />
+    <None Include="Resources\grunge.jpg" />
+    <None Include="Resources\sport.jpg" />
+    <None Include="Resources\poza 2.jpg" />
+    <None Include="Resources\poza 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

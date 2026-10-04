@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\magazin_vestimentar_adela\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\bazadedate_magazindataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|solutionrelative:magazin_vestimentar_adela\\bazadedate_magazindataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\magazin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|solutionrelative:magazin_vestimentar_adela\\magazin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|d:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\magazin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|solutionrelative:magazin_vestimentar_adela\\magazin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D6822EDB-2CC0-49FA-B5B8-ACF181D37A58}|magazin_vestimentar_adela\\magazin_vestimentar_adela.csproj|solutionrelative:magazin_vestimentar_adela\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cart.cs [Design]",
+              "DocumentMoniker": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\cart.cs",
+              "RelativeDocumentMoniker": "magazin_vestimentar_adela\\cart.cs",
+              "ToolTip": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\cart.cs [Design]",
+              "RelativeToolTip": "magazin_vestimentar_adela\\cart.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T15:23:42.929Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "bazadedate_magazinDataSet.xsd",
+              "DocumentMoniker": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\bazadedate_magazinDataSet.xsd",
+              "RelativeDocumentMoniker": "magazin_vestimentar_adela\\bazadedate_magazinDataSet.xsd",
+              "ToolTip": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\bazadedate_magazinDataSet.xsd",
+              "RelativeToolTip": "magazin_vestimentar_adela\\bazadedate_magazinDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-05-15T10:33:49.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Magazin.cs [Design]",
+              "DocumentMoniker": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\Magazin.cs",
+              "RelativeDocumentMoniker": "magazin_vestimentar_adela\\Magazin.cs",
+              "ToolTip": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\Magazin.cs [Design]",
+              "RelativeToolTip": "magazin_vestimentar_adela\\Magazin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T07:51:08.49Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Magazin.cs",
+              "DocumentMoniker": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\Magazin.cs",
+              "RelativeDocumentMoniker": "magazin_vestimentar_adela\\Magazin.cs",
+              "ToolTip": "D:\\magazin_vestimentar_adela\\magazin_vestimentar_adela\\Magazin.cs",
+              "RelativeToolTip": "magazin_vestimentar_adela\\Magazin.cs",
+              "ViewState": "AgIAAFUBAAAAAAAAAAAswJ8BAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T06:14:25.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

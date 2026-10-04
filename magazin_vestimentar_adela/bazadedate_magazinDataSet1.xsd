@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bazadedate_magazinDataSet1" targetNamespace="http://tempuri.org/bazadedate_magazinDataSet1.xsd" xmlns:mstns="http://tempuri.org/bazadedate_magazinDataSet1.xsd" xmlns="http://tempuri.org/bazadedate_magazinDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bazadedate_magazinConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bazadedate_magazinConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.magazin_vestimentar_adela.Properties.Settings.GlobalReference.Default.bazadedate_magazinConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="produseTableAdapter" GeneratorDataComponentClassName="produseTableAdapter" Name="produse" UserDataComponentName="produseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bazadedate_magazinConnectionString (Settings)" DbObjectName="dbo.produse" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TOP (5) p.stil AS stil_produs, p.tip AS nume_produs, SUM(df.cantitate) AS cantitate_totala
+FROM            detalii_factura AS df INNER JOIN
+                         produse AS p ON df.idProdus = p.idProdus
+GROUP BY p.stil, p.tip
+ORDER BY cantitate_totala DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="stil_produs" DataSetColumn="stil_produs" />
+              <Mapping SourceColumn="nume_produs" DataSetColumn="nume_produs" />
+              <Mapping SourceColumn="cantitate_totala" DataSetColumn="cantitate_totala" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bazadedate_magazinDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="bazadedate_magazinDataSet1" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bazadedate_magazinDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="produse" msprop:Generator_RowEvHandlerName="produseRowChangeEventHandler" msprop:Generator_RowDeletedName="produseRowDeleted" msprop:Generator_RowDeletingName="produseRowDeleting" msprop:Generator_RowEvArgName="produseRowChangeEvent" msprop:Generator_TablePropName="produse" msprop:Generator_RowChangedName="produseRowChanged" msprop:Generator_RowChangingName="produseRowChanging" msprop:Generator_TableClassName="produseDataTable" msprop:Generator_RowClassName="produseRow" msprop:Generator_TableVarName="tableproduse" msprop:Generator_UserTableName="produse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="stil_produs" msprop:Generator_ColumnPropNameInRow="stil_produs" msprop:Generator_ColumnPropNameInTable="stil_produsColumn" msprop:Generator_ColumnVarNameInTable="columnstil_produs" msprop:Generator_UserColumnName="stil_produs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nume_produs" msprop:Generator_ColumnPropNameInRow="nume_produs" msprop:Generator_ColumnPropNameInTable="nume_produsColumn" msprop:Generator_ColumnVarNameInTable="columnnume_produs" msprop:Generator_UserColumnName="nume_produs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cantitate_totala" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="cantitate_totala" msprop:Generator_ColumnPropNameInTable="cantitate_totalaColumn" msprop:Generator_ColumnVarNameInTable="columncantitate_totala" msprop:Generator_UserColumnName="cantitate_totala" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
